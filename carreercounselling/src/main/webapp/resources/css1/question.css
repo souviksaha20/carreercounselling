@@ -1,0 +1,247 @@
+  .slides {
+    margin: 50px auto;
+    max-width: 800px;
+    padding-top: 200px;
+  }
+
+  .slide {
+    padding: 30px;
+    margin-bottom: 200px;
+  }
+
+  .blurb {
+    border-bottom: 4px solid black;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+  .slide:nth-child(1) .blurb {
+    color: #673AB7;
+  }
+  .slide:nth-child(2) .blurb {
+    color: #009688;
+  }
+  .slide:nth-child(3) .blurb {
+    color: #E91E63;
+  }
+  .slide:nth-child(4) .blurb {
+    color: #8BC34A;
+  }
+  .slide:nth-child(5) .blurb {
+    color: #2196F3;
+  }
+  .slide:nth-child(6) .blurb {
+    color: #FF9800;
+  }
+  .blurb .title {
+    font-size: 64px;
+    letter-spacing: 0.02em;
+  }
+  .blurb .sub {
+    font-size: 24px;
+  }
+
+  .example {
+    background:#029EB7;
+    
+  }
+  .example.no-padding {
+    padding: 0px;
+  }
+
+ 
+  .example-5 {
+    height: 400px;
+    background: #029EB7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .example-5 .email {
+    background: rgba(0, 0, 0, 0.3);
+    background: white;
+    width: 90%;
+    position: relative;
+    height:50%;
+    max-width:90%;
+    max-height:100%;
+    padding: 4px;
+    box-shadow: 0px 20px 25px -10px rgba(0, 0, 0, 0.2);
+    background: white;
+    border: 5px solid white;
+    transition: opacity 300ms ease-in-out;
+  }
+  .example-5 .email.is-sent {
+    -webkit-animation: launch 1.5s ease-in-out;
+            animation: launch 1.5s ease-in-out;
+  }
+
+  .example-5 .email.fuck-off {
+    /* animation: removed-item-animation 1s cubic-bezier(0.55, -0.04, 0.91, 0.94) forwards;
+    transform origin is moved to the bottom left corner
+    transform-origin: 0% 100%; */
+    -webkit-animation: launchh 1.5s ease-in-out;
+            animation: launchh 1.5s ease-in-out;
+  }
+  .example-5 .email.is-sentt {
+    -webkit-animation: h 1.5s ease-in-out;
+            animation: h 1.5s ease-in-out;
+  }
+  .example-5 .email .masthead {
+    width: 100%;
+    height: 40%;
+    line-height: 80%;
+    background: #e6e6e6;
+    padding:20px;
+    font-size:18px;
+    font-family:'Open Sans' ;
+    text-align: center;
+    }
+  .example-5 .email .sendd {
+  position: absolute;
+    background-color: #029EB7;
+    border: none;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-top:40px;
+    margin-left:70%;
+    padding: 10px;
+    width: 20%;
+    text-align: center;
+    -webkit-transition-duration: 0.6s; /* Safari */
+    transition-duration: 0.6s;
+    text-decoration: none;
+    overflow: auto;
+    cursor: pointer;
+    
+    transition: -webkit-transform 200ms ease-in-out;
+    transition: transform 200ms ease-in-out;
+    transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+    box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.2);
+  }
+  .example-5 .email .send {
+   position:absolute ;
+    background-color: #029EB7;
+    border: none;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 10px;
+    margin-top:40px;
+    width: 20%;
+    text-align: center;
+    -webkit-transition-duration: 0.6s; /* Safari */
+    transition-duration: 0.6s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    transition: -webkit-transform 200ms ease-in-out;
+    transition: transform 200ms ease-in-out;
+    transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+    box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.2);
+  }
+  .example-5 .email .send:hover {
+    -webkit-transform: translate(0px, -5px) scale(1.1);
+            transform: translate(0px, -5px) scale(1.1);
+  }
+  .example-5 .email .sendd:hover {
+     -webkit-transform: translate(0px, -5px) scale(1.1);
+            transform: translate(0px, -5px) scale(1.1);
+  }
+
+  @-webkit-keyframes launch {
+    0% {
+      opacity: 1;
+      -webkit-transform: translateY(0) scale(1);
+              transform: translateY(0) scale(1);
+    }
+    10%, 15% {
+      -webkit-transform: translateY(20px);
+              transform: translateY(20px);
+    }
+    40%, 70% {
+      -webkit-transform: translateY(-600px) scale(1);
+              transform: translateY(-600px) scale(1);
+    }
+    70% {
+      opacity: 1;
+    }
+    71% {
+      opacity: 0;
+      -webkit-transform: translateY(-600px) scale(0.6);
+              transform: translateY(-600px) scale(0.6);
+    }
+    72% {
+      opacity: 0;
+      -webkit-transform: translateY(0px) scale(0.6);
+              transform: translateY(0px) scale(0.6);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0px) scale(1);
+              transform: translateY(0px) scale(1);
+    }
+  }
+  @keyframes launchh {
+    0% {
+      opacity: 1;
+      -webkit-transform: translateY(0) scale(1);
+              transform: translateY(0) scale(1);
+    }
+    10%, 15% {
+      -webkit-transform: translateY(20px);
+              transform: translateY(20px);
+    }
+    40%, 70% ,100% {
+      -webkit-transform: translateY(-600px) scale(1);
+              transform: translateY(-600px) scale(1);
+    }
+  }
+  @keyframes launch {
+    0% {
+      opacity: 1;
+      -webkit-transform: translateY(0) scale(1);
+              transform: translateY(0) scale(1);
+    }
+    10%, 15% {
+      -webkit-transform: translateY(20px);
+              transform: translateY(20px);
+    }
+    40%, 70% {
+      -webkit-transform: translateY(-600px) scale(1);
+              transform: translateY(-600px) scale(1);
+    }
+    70% {
+      opacity: 1;
+    }
+    71% {
+      opacity: 0;
+      -webkit-transform: translateY(-600px) scale(0.6);
+              transform: translateY(-600px) scale(0.6);
+    }
+    72% {
+      opacity: 0;
+      -webkit-transform: translateY(0px) scale(0.6);
+              transform: translateY(0px) scale(0.6);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0px) scale(1);
+              transform: translateY(0px) scale(1);
+    }
+  }
+  @keyframes h {
+    0% {
+      opacity: 1;
+      -webkit-transform: translateY(0) scale(1);
+              transform: translateY(0) scale(1);
+    }
+    10%, 15% {
+      -webkit-transform: translateY(-600px);
+              transform: translateY(-600px);
+    }
+    40%, 70%, 100% {
+      -webkit-transform: translateY(20px) scale(1);
+              transform: translateY(20px) scale(1);
+    }
+  }
+ 

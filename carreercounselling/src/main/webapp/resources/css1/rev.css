@@ -1,0 +1,162 @@
+
+
+
+.container {
+	min-width: 700px;
+	min-height: 350px;
+  border-radius: 20px;
+	position: relative;
+	-webkit-transition: 1.5s ease-in-out;
+	transition: 1.5s ease-in-out;
+	transform-style: preserve-3d;
+	margin-bottom: 40px;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+}
+
+.side {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	padding: 20px 50px;
+	color: #fff;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	border-radius: 20px;
+}
+.content {
+	transform: translatez(70px) scale(0.8);
+	line-height: 1.5em;
+}
+.content h1 {
+	position: relative;
+}
+.content p {
+	margin-top: 65px;
+	line-height: 2em;
+}
+.content h1:before {
+	content: "";
+	position: absolute;
+	bottom: -20px;
+	height: 3px;
+	background-color: #3e3;
+	width: 70px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.front {
+	z-index: 2;
+	background-size: 100vh;
+	background-size: cover;
+	background-image: url(https://livewallpaperhd.com/wp-content/uploads/2017/07/Dark-Elegant-Wallpaper.jpg);
+}
+.back {
+	background-color: #333;
+	transform: rotateY(180deg);
+	z-index: 0;
+	padding-top: 10px;
+	background-image: url(https://userscontent2.emaze.com/images/f9538183-0ff9-478f-b964-c8ab90421e3b/3d28e192fda5c17250f96a2779c84475.jpg);
+}
+.is-transitioned{
+  -webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+.is-done{
+  animation: changeborder 1.5s cubic-bezier(0.07,-0.07, 0.64, 1.45) 1s  forwards normal;
+}
+@keyframes changeborder {
+  0%{
+    border: 3px solid;
+    border-bottom-color: #fff;
+    border-top-color: #fff;
+    border-left-color: #fff;
+    border-right-color: #fff;
+  }
+  40%{
+    border-top-color: #3e3;
+    border-bottom-color: #3e3;
+    border-left-color: #3e3;
+    border-right-color: #3e3;
+
+  }
+
+  60%{
+    border-bottom-color: #fff;
+    border-top-color: #fff;
+    border-left-color: #fff;
+    border-right-color: #fff;
+  }
+  100%{
+    border: 3px solid;
+    border-top-color: #3e3;
+    border-bottom-color: #3e3;
+    border-left-color: #3e3;
+    border-right-color: #3e3;
+
+  }
+}
+/* .container:hover {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+} */
+form {
+	text-align: left;
+}
+.back h1 {
+	margin: 0;
+}
+form label, form input {
+	display: block;
+}
+form input, form textarea {
+	background: transparent;
+	border: 0;
+	border-bottom: 2px solid #444;
+	padding: 5px;
+	width: 100%;
+	color:#fff
+}
+form label {
+	margin: 15px 0;
+}
+form input[type="submit"] {
+	display: block;
+	width: auto;
+	margin: 10px auto;
+	padding: 5px 10px;
+	border: 3px solid #555;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+}
+/* my button style  */
+.white-mode {
+	text-decoration: none;
+	padding: 7px 10px;
+	background-color: #122;
+	border-radius: 3px;
+	color: #FFF;
+	transition: .35s ease-in-out;
+	font-family: "Montserrat";
+}
+.white-mode-alt {
+	text-decoration: none;
+	padding: 7px 10px;
+	background-color: #122;
+	border-radius: 3px;
+	color: #FFF;
+	transition: .35s ease-in-out;
+	font-family: "Montserrat";
+}
+
+.white-mode:hover {
+	background-color: #FFF;
+	color: #122;
+}
